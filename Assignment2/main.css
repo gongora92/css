@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    padding: 5px 10px 15px 20px;
+    border: 3px solid red;
+    height: 300px;
+    width: 49%;
+    display: inline-block;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#first-box {
+    display: none;
+}
+
+div:last-of-type:hover {
+    border-color: green;
+}
