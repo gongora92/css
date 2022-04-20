@@ -1,0 +1,26 @@
+Sebastian Bean12:42
+https://postgresapp.com/downloads.html
+Sebastian Bean12:51
+https://eggerapps.at/postico/
+alejandro@pacto.co
+Sebastian Bean13:11
+https://zwbetz.com/install-ruby-version-manager-on-mac/
+Sebastian Bean13:12
+sudo port installed
+https://postgresapp.com/documentation/remove.html
+
+
+https://meet.google.com/hms-uxmv-kyg
+
+
+code ~/.zshrc
+
+brew install redis
+
+brew install mysql
+
+
+brew tap heroku/brew && brew install heroku
+
+
+heroku pg:pull DATABASE_URL pacto_spree -a mango-spree
