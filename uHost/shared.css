@@ -60,14 +60,14 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5rem;
+    height: 2.5rem;
     /* width: 20px; */
     display: inline-block;
     vertical-align: middle;
 }
 
 .main-header__brand img {
-    height: 2.5rem;
+    height: 100%;
     /* width: 100%; */
 }
 
