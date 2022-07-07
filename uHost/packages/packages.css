@@ -3,7 +3,7 @@ main {
 }
 
 .background {
-  background: url('../images/plans-background.jpg') center/cover;
+  background: url("../images/plans-background.jpg") center/cover;
   filter: grayscale(40%);
   width: 100vw;
   height: 100vh;
@@ -21,8 +21,9 @@ main {
 
 .package:hover,
 .package:active {
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border-color: #ff5454 !important;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  border-color: #ff5454;
+  /* border-color: #ff5454 !important; */
 }
 
 .package a {
@@ -36,10 +37,10 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 1.25rem;
-  font-size: .75rem;
-  color:  white;
-  background-color: #ff5454;
+  margin: 1.2rem;
+  font-size: 0.8rem;
+  color: white;
+  background: #ff5454;
   padding: 0.5rem;
 }
 
@@ -50,9 +51,9 @@ main {
 .package__info {
   padding: 1rem;
   border: 1px solid #0e4f1f;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: #0e4f1f;
-  background-color: white;
+  background: white;
 }
 
 .clearfix {
@@ -60,23 +61,28 @@ main {
 }
 
 #plus {
-  background-color: rgba(213, 255, 220, .95);
+  background: rgba(213, 255, 220, 0.95);
 }
 
 #free {
-  background-color: rgba(234, 252, 237, .95);
+  background: rgba(234, 252, 237, 0.95);
   float: right;
   border-right: none;
   border-left: 4px solid #0e4f1f;
   text-align: right;
 }
 
+#free:hover,
+#free:active {
+  border-left-color: #ff5454;
+}
+
 #premium {
-  background-color: rgba(14, 79, 31, .95);
+  background: rgba(14, 79, 31, 0.95);
 }
 
 #premium .package__title {
-  color: white
+  color: white;
 }
 
 #premium .package__subtitle {
@@ -85,8 +91,9 @@ main {
 
 @media (min-width: 40rem) {
   main {
-    margin: 3rem auto;
     max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -97,5 +104,10 @@ main {
 
   #free {
     border-right: 4px solid #0e4f1f;
+  }
+
+  #free:hover,
+  #free:active {
+    border-right-color: #ff5454;
   }
 }
