@@ -20,11 +20,11 @@ body {
     border: 5px solid black;
     height: 1300px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*flex-flow: row wrap;*/
     align-items: center;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
   }
 
 .item-1 {
@@ -71,6 +71,7 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+    flex-basis: 300px;
 }
 
 .item-6 {
