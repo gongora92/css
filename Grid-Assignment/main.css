@@ -8,32 +8,39 @@ body {
     height: 100%;
     grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 3fr [col-2-end];
     grid-template-rows: 4.5rem auto 4.5rem;
+    grid-template-areas: "hd hd"
+                        "side main"
+                        "ft ft";
 }
 
 header {
     background-color: blue;
     color: white;
-    grid-column-start: col-1-start;
-    grid-column-end: col-2-end;
+    /* grid-column-start: col-1-start;
+    grid-column-end: col-2-end; */
+    grid-area: hd;
 }
 
 main {
     background-color: red;
     color: white;
-    grid-column-start: col-2-start;
+    /* grid-column-start: col-2-start; */
+    grid-area: main;
 }
 
 aside { 
     background-color: green;
     color: white;
-    grid-column-start: col-1-start;
-    grid-row-start: 2;
+    /* grid-column-start: col-1-start;
+    grid-row-start: 2; */
+    grid-area: side;
 }
 
 
 footer {
     background-color: purple;
     color: white;
-    grid-column-start: col-1-start;
-    grid-column-end: col-2-end;
+    /* grid-column-start: col-1-start;
+    grid-column-end: col-2-end; */
+    grid-area: ft;
 }
